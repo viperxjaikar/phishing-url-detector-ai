@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing URL Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 Phishing URL Detector</h1>
+        <p class="subtext">Enter any URL to check if it's safe or a phishing attempt</p>
+
+        <form method="POST" action="/predict" class="form">
+            <input type="text" name="url" placeholder="https://example.com" required>
+            <button type="submit">Check URL</button>
+        </form>
+
+        {% if result %}
+            <div class="result {{ 'phishing' if 'Phishing' in result else 'safe' }}">
+                {{ result }}
+            </div>
+
+            <form method="POST" action="/feedback" class="feedback-form">
+                <input type="hidden" name="url" value="{{ url }}">
+                <input type="hidden" name="result" value="{{ result }}">
+                <label>Was this prediction correct?</label><br>
+                <button type="submit" name="feedback" value="yes" class="yes">👍 Yes</button>
+                <button type="submit" name="feedback" value="no" class="no">👎 No</button>
+            </form>
+        {% endif %}
+
+        {% if feedback_recorded %}
+            <div class="confirmation">✅ Feedback recorded. Thanks!</div>
+        {% endif %}
+
+        <footer>
+            <p>⚠️ This tool uses AI & Google's Safe Browsing API to evaluate URLs.<br>
+            For educational & cybersecurity research use only.</p>
+        </footer>
+    </div>
+</body>
+</html>

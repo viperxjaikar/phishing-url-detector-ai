@@ -1,0 +1,27 @@
+timestamp,url,model_result,google_result,final_result,user_feedback
+2025-07-09 16:51:12,http://youtube.com,Phishing,False,Phishing (Model),None
+2025-07-09 16:53:56,http://verify-paypal-login.com,Phishing,False,Phishing (Model),None
+2025-07-09 16:54:05,https://accounts.google.com,Safe,False,Safe,None
+2025-07-09 16:54:35,https://accounts.google.com,N/A,N/A,🟢 Safe Website,yes
+2025-07-09 16:58:27,https://accounts.google.com,N/A,N/A,✅ Feedback recorded: Yes,no
+2025-07-09 16:58:29,https://accounts.google.com,N/A,N/A,✅ Feedback recorded: No,yes
+2025-07-09 16:58:33,http://verify-paypal-login.com,Phishing,False,Phishing (Model),None
+2025-07-09 16:58:35,http://verify-paypal-login.com,N/A,N/A,🔴 Phishing Website,yes
+2025-07-09 16:58:40,http://youtube.com,Phishing,False,Phishing (Model),None
+2025-07-09 16:58:41,http://youtube.com,N/A,N/A,🔴 Phishing Website,no
+2025-07-09 17:02:07,http://verify-paypal-login.com,Phishing,False,Phishing (Model),None
+2025-07-09 17:02:08,http://verify-paypal-login.com,N/A,N/A,🔴 Phishing Website,yes
+2025-07-09 17:05:15,https://accounts.google.com,Safe (Model),Safe (Google),🟢 Safe Website,None
+2025-07-09 17:05:17,https://accounts.google.com,N/A,N/A,🟢 Safe Website,yes
+2025-07-09 17:05:26,https://accounts.google.com,Safe (Model),Safe (Google),🟢 Safe Website,None
+2025-07-09 17:05:28,https://accounts.google.com,N/A,N/A,🟢 Safe Website,yes
+2025-07-09 17:05:44,http://youtube.com,Phishing (Model),Safe (Google),🔴 Phishing Website (Model Only),None
+2025-07-09 17:05:47,http://youtube.com,N/A,N/A,🔴 Phishing Website (Model Only),no
+2025-07-09 17:07:36,https://accounts.google.com,Safe (Model),Safe (Google),🟢 Safe Website,None
+2025-07-09 17:07:37,https://accounts.google.com,Safe (Model),Safe (Google),🟢 Safe Website,yes
+2025-07-09 17:07:39,https://accounts.google.com,Safe (Model),Safe (Google),🟢 Safe Website,yes
+2025-07-09 17:08:51,https://accounts.google.com,Safe (Model),Safe (Google),🟢 Safe Website,yes
+2025-07-09 17:14:09,http://youtube.com,Phishing,False,Phishing (Model),None
+2025-07-09 17:14:13,http://youtube.com,-,-,🔴 Phishing Website (Detected by AI Model),no
+2025-07-09 17:17:09,http://youtube.com,Phishing,False,Phishing (Model),None
+2025-07-09 17:17:17,http://youtube.com,-,-,🔴 Phishing Website (Detected by AI Model),no
